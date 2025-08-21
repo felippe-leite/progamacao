@@ -10,26 +10,24 @@ public class exercicio11 {
 		Locale.setDefault(Locale.US);
 
 		Scanner sc = new Scanner(System.in);
-		
+
 		int numero1 = sc.nextInt();
 		int numero2 = sc.nextInt();
 		int numero3 = sc.nextInt();
 
 		sc.close();
-		
-		if (numero1 > numero2 && numero1 > numero3) {
+
+		if (numero1 < numero2 && numero1 < numero3) {
 			System.out.println("MENOR = " + numero1);
 		}
-		
-		else if (numero2 > numero1 && numero2 > numero3) {
+
+		else if (numero2 < numero1 && numero2 < numero3) {
 			System.out.println("MENOR = " + numero2);
 		}
-		
+
 		else {
 			System.out.println("MENOR = " + numero3);
 		}
-			
-		
 
 	}
 
