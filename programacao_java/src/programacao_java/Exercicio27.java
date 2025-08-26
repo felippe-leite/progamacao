@@ -9,33 +9,36 @@ public class Exercicio27 {
 		Locale.setDefault(Locale.US);
 
 		Scanner sc = new Scanner(System.in);
-
-		int codigo = sc.nextInt();
+		
+		int codigo = 0;
 		int alcool = 0;
 		int gasolina = 0;
 		int diesel = 0;
 
 		while (codigo != 4) {
-
+			System.out.println("Digite o proximo numero");
+			codigo = sc.nextInt();
 			switch (codigo) {
 
 			case 1:
-				alcool += alcool;
+				alcool += 1;
+				
 				break;
 			case 2:
-				gasolina += gasolina;
+				gasolina += 1;
+				
 				break;
 			case 3:
-				diesel += diesel;
+				diesel += 1;
+				
 				break;
 			default:
-				System.out.println("Digite outro codigo:");
-				codigo = sc.nextInt();
+				
+	
 				break;
 
 			}
-			codigo = sc.nextInt();
-
+			
 		}
 
 		sc.close();
