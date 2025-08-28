@@ -3,40 +3,28 @@ package programacao_java;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercicio30 {
+public class Exercicio31 {
 
 	public static void main(String[] args) {
-
-		Locale.setDefault(Locale.US);
-
-		Scanner sc = new Scanner(System.in);
-
-		int min, max;
-
-		int x = sc.nextInt();
-		int y = sc.nextInt();
-
-		if (x < y) {
-			min = x;
-			max = y;
-
-		}
-
-		else {
-			min = y;
-			max = x;
-		}
 		
-		int soma = 0;
-		for (int i=min+1; i<max; i++) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		
+		for (int i = 1; x >= i; i++) {
+			
 			if (i % 2 != 0) {
-				soma += i;
+				System.out.println(i);
 			}
 			
+			
+			
 		}
-			
-		System.out.println(soma);
-			
+		
+		
+		
 		sc.close();
 
 	}
